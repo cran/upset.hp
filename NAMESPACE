@@ -1,0 +1,10 @@
+exportPattern("^[[:alpha:]]+")
+export(upset.hp)
+
+import(MuMIn)
+import(ggplot2)
+import(glmm.hp)
+import(vegan)
+import(patchwork)
+import(grDevices)
+importFrom("utils", "tail")
