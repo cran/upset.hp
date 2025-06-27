@@ -22,7 +22,8 @@ upset.hp(
   title.cex = 10,
   axis.cex = 8,
   height.ratio = c(2, 1),
-  width.ratio = c(1, 3)
+  width.ratio = c(1, 3),
+  col = "nature"
 )
 }
 \arguments{
@@ -61,6 +62,8 @@ upset.hp(
 \item{height.ratio}{Ratio between matrix and top column diagram, default is \code{c(2, 1)}.}
 
 \item{width.ratio}{Ratio between matrix and left column diagram, default is \code{c(1, 3)}.}
+
+\item{col}{Character. Color palette name: "nature" (default), "science", "cell", "bw" (black-white), or "cvd" (color-blind friendly).}
 }
 \value{
 \itemize{Returns a ggplot2.}
@@ -77,7 +80,7 @@ library(glmm.hp)
 m2<-lm(mpg~wt+carb+cyl,mtcars)
 vp <- glmm.hp(m2,commonality=TRUE)$commonality.analysis
 hp <- glmm.hp(m2)$hierarchical.partitioning
-upset.hp(vp,hp)
+upset.hp(vp, hp, col = "cvd")
 }
 \references{
 Lai J., Zou Y., Zhang J., Peres-Neto P. (2022) Generalizing hierarchical and variation partitioning in multiple regression and canonical analyses using the rdacca.hp R package. Methods in Ecology and Evolution, 13:782-788.
@@ -89,4 +92,6 @@ Lai J.,Zhu W., Cui D.,Mao L.(2023)Extension of the glmm.hp package to Zero-Infla
 Liu Y., Yu X., Yu Y., et al. (2023) Application of "rdacca. hp" R package in ecological data analysis: case and progress. Chinese Journal of Plant Ecology, 27:134-144.
 
 Lai J.,Tang J., Li T., Zhang A.,Mao L.(2024)Evaluating the relative importance of predictors in Generalized Additive Models using the gam.hp R package.Plant Diversity,46(4):542-546<DOI:10.1016/j.pld.2024.06.002>
+
+Lai J.,He Y., Hou M., Zhang A.,Wang G., Mao L.(2025)Evaluating the relative importance of phylogeny and predictors in Phylogenetic Generalized Linear Models using the phylolm.hp R package. Plant Diversity. https://doi.org/10.1016/j.pld.2025.06.003
 }
