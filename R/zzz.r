@@ -1,1 +1,1 @@
-utils::globalVariables(c("Individual", "X1", "X2", "X3", "X4"))
+utils::globalVariables(c("Individual", "X1", "X2", "X3", "X4","Var","Fractions"))
