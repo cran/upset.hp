@@ -23,7 +23,8 @@ upset.hp(
   axis.cex = 8,
   height.ratio = c(2, 1),
   width.ratio = c(1, 3),
-  col = "nature"
+  col = "nature",
+  digits = 2
 )
 }
 \arguments{
@@ -64,6 +65,8 @@ upset.hp(
 \item{width.ratio}{Ratio between matrix and left column diagram, default is \code{c(1, 3)}.}
 
 \item{col}{Character. Color palette name: "nature" (default), "science", "cell", "bw" (black-white), or "cvd" (color-blind friendly).}
+
+\item{digits}{Integer. Number of decimal places to display for effect values, default is \code{2}.}
 }
 \value{
 \itemize{Returns a ggplot2.}
@@ -80,7 +83,7 @@ library(glmm.hp)
 m2<-lm(mpg~wt+carb+cyl,mtcars)
 vp <- glmm.hp(m2,commonality=TRUE)$commonality.analysis
 hp <- glmm.hp(m2)$hierarchical.partitioning
-upset.hp(vp, hp, col = "cvd")
+upset.hp(vp, hp, col = "cvd",digit = 1)
 }
 \references{
 Lai J., Zou Y., Zhang J., Peres-Neto P. (2022) Generalizing hierarchical and variation partitioning in multiple regression and canonical analyses using the rdacca.hp R package. Methods in Ecology and Evolution, 13:782-788.

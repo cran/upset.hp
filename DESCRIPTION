@@ -1,6 +1,6 @@
 Package: upset.hp
 Title: Generate UpSet Plots of VP and HP Based on the ASV Concept
-Version: 0.0.3
+Version: 0.0.4
 Authors@R: c(person("Jiangshan", "Lai", , "lai@njfu.edu.cn", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-0279-8816")),person("Yao", "Liu", role="aut"),person("Bangken", "Ying", role="aut"))
 Maintainer: Jiangshan Lai <lai@njfu.edu.cn>
@@ -11,12 +11,12 @@ Imports: MuMIn, vegan, glmm.hp, ggplot2, patchwork, grDevices
 License: GPL (>= 2)
 Encoding: UTF-8
 RoxygenNote: 7.3.1
-Date: 2025-07-17
+Date: 2025-07-20
 NeedsCompilation: no
-Packaged: 2025-07-17 07:53:07 UTC; lai
+Packaged: 2025-07-20 09:12:08 UTC; lai
 Author: Jiangshan Lai [aut, cre] (ORCID:
     <https://orcid.org/0000-0002-0279-8816>),
   Yao Liu [aut],
   Bangken Ying [aut]
 Repository: CRAN
-Date/Publication: 2025-07-17 08:10:02 UTC
+Date/Publication: 2025-07-20 17:50:02 UTC
