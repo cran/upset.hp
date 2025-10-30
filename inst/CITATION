@@ -1,0 +1,19 @@
+citHeader("To cite upset.hp in publications use:")
+
+bibentry(bibtype = "Article",
+         title        = "upset.hp: An R Package for Visualizing Hierarchical Partitioning and Variance Partitioning Results Using UpSet Plots.",
+         author       = as.person("Bangken Ying [aut],Yao Liu[aut],Jiangshan Lai [aut]"),
+         journal      = "Data Intelligence",
+		  volume       = "7",
+         year         = "2025",
+         url          = "https://doi.org/10.3724/2096-7004.di.2025.0200",
+
+         textVersion  =
+           paste("Bangken Ying, Yao Liu, Jiangshan Lai(2025).",
+                 "upset.hp: An R Package for Visualizing Hierarchical Partitioning and Variance Partitioning Results Using UpSet Plots.",
+                 "Data Intelligence,7:",
+                 "URL https://doi.org/10.3724/2096-7004.di.2025.0200")
+)
+
+
+
